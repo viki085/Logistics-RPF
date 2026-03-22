@@ -1,0 +1,64 @@
+{
+    "summary": {
+        "total": 7,
+        "matched": 6,
+        "verify": 1,
+        "kb_resolved": 3,
+        "llm_resolved": 4
+    },
+    "mappings": {
+        "pol": {
+            "schema_field": "origin_port",
+            "input_field": "pol",
+            "confidence": 90,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The term 'pol' is a common abbreviation for 'Port of Loading', which directly corresponds to the 'origin_port'."
+        },
+        "pod": {
+            "schema_field": "destination_port",
+            "input_field": "pod",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "rate 20": {
+            "schema_field": "container_type_20gp_rate",
+            "input_field": "rate 20",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "rate 40hc": {
+            "schema_field": "container_type_40hq_rate",
+            "input_field": "rate 40hc",
+            "confidence": 85,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The input 'rate 40hc' is likely referring to the rate for a 40-foot high-cube container, designated in the schema as 'container_type_40hq_rate'. The slight variation in terminology is a common industry usage, hence the relatively high confidence score."
+        },
+        "departure": {
+            "schema_field": "estimated_time_of_departure",
+            "input_field": "departure",
+            "confidence": 75,
+            "source": "llm",
+            "status": "Verify",
+            "reasoning": "The input 'departure' likely refers to the estimated time of departure, though without additional context (such as a specific date format or indication), there is some ambiguity."
+        },
+        "t/t": {
+            "schema_field": "transit_time_days",
+            "input_field": "t/t",
+            "confidence": 82,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The shorthand 't/t' is a common abbreviation for 'transit time', referring to the duration of transport in days, which aligns closely with 'transit_time_days'."
+        },
+        "curr": {
+            "schema_field": "currency",
+            "input_field": "curr",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        }
+    }
+}

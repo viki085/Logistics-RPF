@@ -1,0 +1,63 @@
+{
+    "summary": {
+        "total": 7,
+        "matched": 7,
+        "verify": 0,
+        "kb_resolved": 4,
+        "llm_resolved": 3
+    },
+    "mappings": {
+        "load port": {
+            "schema_field": "origin_port",
+            "input_field": "load port",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "discharge port": {
+            "schema_field": "destination_port",
+            "input_field": "discharge port",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "20'": {
+            "schema_field": "container_type_20gp_rate",
+            "input_field": "20'",
+            "confidence": 85,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The input column '20'' refers to a 20-foot container, which maps directly to 'container_type_20gp_rate' in the shipping context."
+        },
+        "40' hc": {
+            "schema_field": "container_type_40hq_rate",
+            "input_field": "40' hc",
+            "confidence": 90,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The input column '40' hc' likely refers to a 40-foot high cube container, which maps directly to 'container_type_40hq_rate'. 'HC' stands for high cube, commonly used in shipping."
+        },
+        "sailing date": {
+            "schema_field": "estimated_time_of_departure",
+            "input_field": "sailing date",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "duration": {
+            "schema_field": "transit_time_days",
+            "input_field": "duration",
+            "confidence": 82,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The input column 'duration' refers to the time taken for transit, which corresponds to 'transit_time_days'. This terminology is commonly used for estimating shipping times in days."
+        },
+        "rate currency": {
+            "schema_field": "currency",
+            "input_field": "rate currency",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        }
+    }
+}

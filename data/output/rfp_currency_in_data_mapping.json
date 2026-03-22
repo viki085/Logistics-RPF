@@ -1,0 +1,64 @@
+{
+    "summary": {
+        "total": 7,
+        "matched": 7,
+        "verify": 0,
+        "kb_resolved": 3,
+        "llm_resolved": 4
+    },
+    "mappings": {
+        "origin": {
+            "schema_field": "origin_port",
+            "input_field": "origin",
+            "confidence": 95,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The input field 'origin' is a direct reference to the starting point of the shipment, which aligns with the 'origin_port' field in the target schema."
+        },
+        "dest port": {
+            "schema_field": "destination_port",
+            "input_field": "dest port",
+            "confidence": 95,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The input field 'dest port' explicitly indicates the endpoint of the shipment, making it a direct match for the 'destination_port' in the target schema."
+        },
+        "20gp rate": {
+            "schema_field": "container_type_20gp_rate",
+            "input_field": "20gp rate",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "40hc rate": {
+            "schema_field": "container_type_40hq_rate",
+            "input_field": "40hc rate",
+            "confidence": 88,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The input field '40hc rate' likely refers to the shipping rate for a high-cube 40-foot container, which matches the 'container_type_40hq_rate' field in the target schema, as 40hc is commonly used interchangeably with 40HQ."
+        },
+        "sailing date": {
+            "schema_field": "estimated_time_of_departure",
+            "input_field": "sailing date",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "t/t": {
+            "schema_field": "transit_time_days",
+            "input_field": "t/t",
+            "confidence": 85,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The input field 't/t' appears to be an abbreviation for 'transit time,' which aligns closely with 'transit_time_days,' representing the number of days taken for the shipment transit."
+        },
+        "curr": {
+            "schema_field": "currency",
+            "input_field": "curr",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        }
+    }
+}

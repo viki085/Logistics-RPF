@@ -1,0 +1,61 @@
+{
+    "summary": {
+        "total": 7,
+        "matched": 7,
+        "verify": 0,
+        "kb_resolved": 6,
+        "llm_resolved": 1
+    },
+    "mappings": {
+        "orig port": {
+            "schema_field": "origin_port",
+            "input_field": "orig port",
+            "confidence": 95,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "\"orig port\" is a commonly used abbreviation for \"origin port,\" indicating the port where the shipment originates. The abbreviation closely resembles the standard terminology, leading to a high confidence in it being a direct match."
+        },
+        "destination": {
+            "schema_field": "destination_port",
+            "input_field": "destination",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "20gp": {
+            "schema_field": "container_type_20gp_rate",
+            "input_field": "20gp",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "40hq rate": {
+            "schema_field": "container_type_40hq_rate",
+            "input_field": "40hq rate",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "etd": {
+            "schema_field": "estimated_time_of_departure",
+            "input_field": "etd",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "transit days": {
+            "schema_field": "transit_time_days",
+            "input_field": "transit days",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "currency": {
+            "schema_field": "currency",
+            "input_field": "currency",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        }
+    }
+}

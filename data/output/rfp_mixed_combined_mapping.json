@@ -1,0 +1,62 @@
+{
+    "summary": {
+        "total": 7,
+        "matched": 7,
+        "verify": 0,
+        "kb_resolved": 5,
+        "llm_resolved": 2
+    },
+    "mappings": {
+        "place of receipt": {
+            "schema_field": "origin_port",
+            "input_field": "place of receipt",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "place of delivery": {
+            "schema_field": "destination_port",
+            "input_field": "place of delivery",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "20ft": {
+            "schema_field": "container_type_20gp_rate",
+            "input_field": "20ft",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "40ft hq": {
+            "schema_field": "container_type_40hq_rate",
+            "input_field": "40ft hq",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "departure date": {
+            "schema_field": "estimated_time_of_departure",
+            "input_field": "departure date",
+            "confidence": 100,
+            "source": "kb",
+            "status": "Match"
+        },
+        "sailing days": {
+            "schema_field": "transit_time_days",
+            "input_field": "sailing days",
+            "confidence": 85,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "The term 'sailing days' closely aligns with the concept of 'transit time in days' in shipping, implying the duration a vessel takes from origin to destination."
+        },
+        "ccy code": {
+            "schema_field": "currency",
+            "input_field": "ccy code",
+            "confidence": 90,
+            "source": "llm",
+            "status": "Match",
+            "reasoning": "'ccy' is a common abbreviation for 'currency', and 'code' denotes the symbolic representation of the currency, making it a strong match for the 'currency' field."
+        }
+    }
+}
