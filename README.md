@@ -94,8 +94,8 @@ It uses a tailored prompt with the target schema, scoring guidelines and few-sho
 | **Schema** | `src/config/schema.py` | Target schema fields, knowledge base synonyms, currency codes |
 | **DataLoader** | `src/ingest/loader.py` | Read CSV/Excel into pandas DataFrame |
 | **Preprocessor** | `src/ingest/preprocessor.py` | Header normalization and combined-column resolution |
-| **KnowledgeBaseMatcher** | `src/matchers/kb_mapper.py` | Tier 2 fuzzy matching against synonym dictionary |
-| **LLMMatcher** | `src/matchers/llm_matcher.py` | Tier 3 GPT-4o fallback for ambiguous columns |
+| **KnowledgeBaseMatcher** | `src/matchers/kb_mapper.py` | fuzzy matching against synonym dictionary |
+| **LLMMatcher** | `src/matchers/llm_matcher.py` | GPT-4o fallback for ambiguous columns |
 | **Validator** | `src/matchers/validator.py` | (Placeholder — not yet implemented) |
 | **MappingExporter** | `src/exporter/exporter.py` | Write JSON mapping log with summary statistics |
 | **ColumnMapper** | `src/exporter/exporter.py` | Rename DataFrame columns and write updated CSV |
