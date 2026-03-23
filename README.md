@@ -276,6 +276,13 @@ Qingdao,Felixstowe,1150 GBP,2100 GBP,2024-03-22,35,GBP
 
 ### Execution :
 
+Create a `.env` file in the root directory and add the following environment variables:
+
+```env
+OPENAI_API_KEY=your_openai_api_key
+HF_TOKEN = your_huggingface_api_key   # Only required for implementing the Sentence Transformer model in the experiments notebook.
+```
+
 Single File Processing Pipeline:
 
 Manually edit the file name in the `src\pipeline\pipeline.py` file.
