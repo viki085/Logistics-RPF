@@ -20,6 +20,7 @@ class Pipeline:
 
     def ingest(self) -> pd.DataFrame:
         df = self.data_loader.load()
+        df = self.preprocessor.resolve_combined_columns(df)
         df.columns = self.preprocessor.preprocess_header(self.data_loader.get_columns())
         return df
 
