@@ -268,10 +268,10 @@ Qingdao,Felixstowe,1150 GBP,2100 GBP,2024-03-22,35,GBP
 `updated.csv`
 ```csv
 origin_port,destination_port,container_type_20gp_rate,container_type_40hq_rate,estimated_time_of_departure,transit_time_days,currency
-Shanghai,Rotterdam,1200 USD,2200 USD,2024-03-15,28,USD
-Ningbo,Hamburg,1300 USD,2400 USD,2024-03-18,32,USD
-Shenzhen,Antwerp,1250 EUR,2300 EUR,2024-03-20,30,EUR
-Qingdao,Felixstowe,1150 GBP,2100 GBP,2024-03-22,35,GBP
+Shanghai,Rotterdam,1200,2200,2024-03-15,28,USD
+Ningbo,Hamburg,1300,2400,2024-03-18,32,USD
+Shenzhen,Antwerp,1250,2300,2024-03-20,30,EUR
+Qingdao,Felixstowe,1150,2100,2024-03-22,35,GBP
 ```
 
 ### Execution :
