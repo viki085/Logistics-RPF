@@ -48,15 +48,15 @@
             "confidence": 85,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The term 'sailing days' closely aligns with the concept of 'transit time in days' in shipping, implying the duration a vessel takes from origin to destination."
+            "reasoning": "\"Sailing days\" closely relates to the time taken for the ship to travel from the origin to the destination, which is semantically similar to \"transit_time_days\". This term is often used in the industry to describe the duration of transit, thus a strong match."
         },
         "ccy code": {
             "schema_field": "currency",
             "input_field": "ccy code",
-            "confidence": 90,
+            "confidence": 91,
             "source": "llm",
             "status": "Match",
-            "reasoning": "'ccy' is a common abbreviation for 'currency', and 'code' denotes the symbolic representation of the currency, making it a strong match for the 'currency' field."
+            "reasoning": "\"Ccy code\" is a commonly used abbreviation for \"currency code\" in financial and logistical contexts. The direct correlation with the representation of currency makes it a direct match with the \"currency\" schema field."
         }
     }
 }

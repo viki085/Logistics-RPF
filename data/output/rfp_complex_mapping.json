@@ -13,7 +13,7 @@
             "confidence": 95,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The column 'from' typically represents the starting location in a shipping context, which aligns with 'origin_port'."
+            "reasoning": "The field 'from' typically represents the starting location, which aligns directly with 'origin_port'."
         },
         "to": {
             "schema_field": "destination_port",
@@ -21,7 +21,7 @@
             "confidence": 95,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The column 'to' typically represents the destination in a shipping context, which aligns with 'destination_port'."
+            "reasoning": "The field 'to' generally indicates the ending location or destination, which matches with 'destination_port'."
         },
         "20ft": {
             "schema_field": "container_type_20gp_rate",
@@ -36,7 +36,7 @@
             "confidence": 85,
             "source": "llm",
             "status": "Match",
-            "reasoning": "While '40ft' generally refers to a 40-foot container, it often includes high cube (HQ) containers, making this a suitable match."
+            "reasoning": "While the input uses '40ft', this likely refers to a type of container usually associated with '40HQ' rates due to industry commonalities regarding container sizes."
         },
         "etd yyyymmdd": {
             "schema_field": "estimated_time_of_departure",
@@ -44,15 +44,15 @@
             "confidence": 90,
             "source": "llm",
             "status": "Match",
-            "reasoning": "'etd' stands for Estimated Time of Departure, and the inclusion of a date format (yyyymmdd) confirms it refers to departure timing."
+            "reasoning": "'ETD' stands for 'Estimated Time of Departure', and the format 'yyyymmdd' indicates a date format, matching well with 'estimated_time_of_departure'."
         },
         "transit": {
             "schema_field": "transit_time_days",
             "input_field": "transit",
-            "confidence": 85,
+            "confidence": 88,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The term 'transit' in shipping refers to the duration or time taken to reach the destination, which aligns with 'transit_time_days'."
+            "reasoning": "The term 'transit' in logistics contexts commonly refers to the transit time, or the duration of travel, often measured in days."
         },
         "ccy": {
             "schema_field": "currency",

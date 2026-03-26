@@ -13,7 +13,7 @@
             "confidence": 95,
             "source": "llm",
             "status": "Match",
-            "reasoning": "\"orig port\" is a commonly used abbreviation for \"origin port,\" indicating the port where the shipment originates. The abbreviation closely resembles the standard terminology, leading to a high confidence in it being a direct match."
+            "reasoning": "The input column 'orig port' directly corresponds to 'origin_port' in the target schema. 'orig' is a common abbreviation for 'origin', and 'port' indicates the starting location for shipments, making this a very strong semantic match."
         },
         "destination": {
             "schema_field": "destination_port",

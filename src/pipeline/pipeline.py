@@ -50,3 +50,12 @@ if __name__ == "__main__":
     pipeline.export_mapping(final_mapping)
     pipeline.apply_mapping(df, final_mapping)
 
+# input files
+'''
+rfp_complex.csv
+rfp_currency_in_data.csv
+rfp_descriptive.csv
+rfp_mixed_combined.csv
+rfp_shorthand.csv
+rfp_standard.csv
+'''

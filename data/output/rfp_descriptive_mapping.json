@@ -1,8 +1,8 @@
 {
     "summary": {
         "total": 7,
-        "matched": 7,
-        "verify": 0,
+        "matched": 6,
+        "verify": 1,
         "kb_resolved": 4,
         "llm_resolved": 3
     },
@@ -24,18 +24,18 @@
         "20'": {
             "schema_field": "container_type_20gp_rate",
             "input_field": "20'",
-            "confidence": 85,
+            "confidence": 90,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The input column '20'' refers to a 20-foot container, which maps directly to 'container_type_20gp_rate' in the shipping context."
+            "reasoning": "The input column '20'' refers to the standard 20-foot container, commonly referred to as a 20GP. The match is direct for 20-foot container rates."
         },
         "40' hc": {
             "schema_field": "container_type_40hq_rate",
             "input_field": "40' hc",
-            "confidence": 90,
+            "confidence": 85,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The input column '40' hc' likely refers to a 40-foot high cube container, which maps directly to 'container_type_40hq_rate'. 'HC' stands for high cube, commonly used in shipping."
+            "reasoning": "The input column '40' hc' most likely refers to 40-foot high-cube containers, usually abbreviated as 40HQ. This implies a strong semantic similarity with 'container_type_40hq_rate'."
         },
         "sailing date": {
             "schema_field": "estimated_time_of_departure",
@@ -47,10 +47,10 @@
         "duration": {
             "schema_field": "transit_time_days",
             "input_field": "duration",
-            "confidence": 82,
+            "confidence": 75,
             "source": "llm",
-            "status": "Match",
-            "reasoning": "The input column 'duration' refers to the time taken for transit, which corresponds to 'transit_time_days'. This terminology is commonly used for estimating shipping times in days."
+            "status": "Verify",
+            "reasoning": "The term 'duration' is likely related to time, and in the context of shipping, it could imply transit time. However, without specific context, some ambiguity remains whether it directly correlates to transit time as it could potentially mean other types of durations (e.g., contract duration, total shipment time including customs delays, etc.)."
         },
         "rate currency": {
             "schema_field": "currency",

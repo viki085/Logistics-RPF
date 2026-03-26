@@ -13,15 +13,15 @@
             "confidence": 95,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The input field 'origin' is a direct reference to the starting point of the shipment, which aligns with the 'origin_port' field in the target schema."
+            "reasoning": "'Origin' closely aligns with 'origin_port', which typically refers to the port of origin in shipping contexts."
         },
         "dest port": {
             "schema_field": "destination_port",
             "input_field": "dest port",
-            "confidence": 95,
+            "confidence": 93,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The input field 'dest port' explicitly indicates the endpoint of the shipment, making it a direct match for the 'destination_port' in the target schema."
+            "reasoning": "'Dest port' is a common abbreviation for 'destination_port' in freight forwarding, directly indicating the port where the shipment is intended to be delivered."
         },
         "20gp rate": {
             "schema_field": "container_type_20gp_rate",
@@ -36,7 +36,7 @@
             "confidence": 88,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The input field '40hc rate' likely refers to the shipping rate for a high-cube 40-foot container, which matches the 'container_type_40hq_rate' field in the target schema, as 40hc is commonly used interchangeably with 40HQ."
+            "reasoning": "'40hc' is a variant of '40hq' (High Cube), commonly used interchangeably in industry jargon, especially when discussing rates. The term 'rate' confirms the financial aspect."
         },
         "sailing date": {
             "schema_field": "estimated_time_of_departure",
@@ -48,10 +48,10 @@
         "t/t": {
             "schema_field": "transit_time_days",
             "input_field": "t/t",
-            "confidence": 85,
+            "confidence": 90,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The input field 't/t' appears to be an abbreviation for 'transit time,' which aligns closely with 'transit_time_days,' representing the number of days taken for the shipment transit."
+            "reasoning": "'T/T' frequently stands for 'transit time' in the shipping industry, where efficiency and duration are key metrics expressed in days."
         },
         "curr": {
             "schema_field": "currency",

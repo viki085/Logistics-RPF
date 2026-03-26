@@ -1,8 +1,8 @@
 {
     "summary": {
         "total": 7,
-        "matched": 6,
-        "verify": 1,
+        "matched": 7,
+        "verify": 0,
         "kb_resolved": 3,
         "llm_resolved": 4
     },
@@ -10,10 +10,10 @@
         "pol": {
             "schema_field": "origin_port",
             "input_field": "pol",
-            "confidence": 90,
+            "confidence": 95,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The term 'pol' is a common abbreviation for 'Port of Loading', which directly corresponds to the 'origin_port'."
+            "reasoning": "\"pol\" stands for \"Port of Loading\", which directly corresponds to \"origin_port\" in the standard schema."
         },
         "pod": {
             "schema_field": "destination_port",
@@ -35,23 +35,23 @@
             "confidence": 85,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The input 'rate 40hc' is likely referring to the rate for a 40-foot high-cube container, designated in the schema as 'container_type_40hq_rate'. The slight variation in terminology is a common industry usage, hence the relatively high confidence score."
+            "reasoning": "\"rate 40hc\" refers to the rate for a 40-foot high-cube container, which aligns with \"container_type_40hq_rate\". However, slight ambiguity exists as \"hc\" is not a standard abbreviation, though it is commonly used in the industry."
         },
         "departure": {
             "schema_field": "estimated_time_of_departure",
             "input_field": "departure",
-            "confidence": 75,
+            "confidence": 80,
             "source": "llm",
-            "status": "Verify",
-            "reasoning": "The input 'departure' likely refers to the estimated time of departure, though without additional context (such as a specific date format or indication), there is some ambiguity."
+            "status": "Match",
+            "reasoning": "\"departure\" relates to the time or date a shipment is expected to leave, which matches \"estimated_time_of_departure\". This term is commonly used interchangeably with \"ETD\" in industry vernacular."
         },
         "t/t": {
             "schema_field": "transit_time_days",
             "input_field": "t/t",
-            "confidence": 82,
+            "confidence": 90,
             "source": "llm",
             "status": "Match",
-            "reasoning": "The shorthand 't/t' is a common abbreviation for 'transit time', referring to the duration of transport in days, which aligns closely with 'transit_time_days'."
+            "reasoning": "\"t/t\" is a shorthand for \"transit time\" and typically represents the total number of days taken for the shipment, thus aligning with \"transit_time_days\"."
         },
         "curr": {
             "schema_field": "currency",
